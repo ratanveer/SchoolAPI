@@ -16,7 +16,7 @@ class Auth extends CI_Controller {
 		        $password = $params['password'];
 													
 		        $response = $this->MyModel->login($username,$password);
-				json_output($response['status'],$response);	
+				json_output($response['status'],$response);		
 		}
-	}	
+	}		
 }
